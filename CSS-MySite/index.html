@@ -1,0 +1,80 @@
+<!-- do not block from being on the same line COMMON INLINE ELEMNETS span,img,a-->
+<!--Span is an inline element. It has no width or height. You could turn it into a block-level element,
+ then it will accept your dimension directives.-->
+<!--IT can change the properties and can be in the same line using inline-block-->
+<!--display:none removes the element and does not keep any actual position for it as it never existed
+where as visibility:hidden removes the element but keeps the actual position as it is existed for it
+and elements around it flow around it as if it is still there-->
+<!--In relative postioning we place it by moving it with refernec to the static(original) position taht is
+we mention position as relative then it gets moved(adding margin) only when we give the cordiante properties like
+top bottom left and right that is right means it moves towards left and top mean moved towards bottom and vice versa
+with reference to the original space (it goes with natural html flow)-->
+<!--In absolute position it moves with relative to its parent here also moves(adding margin) when cordiantes mentioned
+right means moves left and top means down and viceversa with respect to the parent(body)if not nested in anything then body
+is considered a the parent (it goes against natural html flow) else if not body and anyother parent from nested then
+right means moves right top means moves top and vice-versa -->
+<!--postion:fixed remains fixed even when scrolled position:static is the orginal position which is set as default
+by the browser-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>SHREYA</title>
+  <link rel="stylesheet" href="../CSS-MySite/css/styles.css">
+  <link rel="icon" href="favicon.ico">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="top-container">
+    <img class="top-cloud" src="images/cloud.png" alt="cloud-image">
+    <h1>I'm Shreya.</h1>
+    <h2><p>a <span class="pro">pro</span>grammer.</p></h2>
+    <img class="bottom-cloud" src="images/cloud.png" alt="cloud-image">
+    <img src="images/mountain.jpg" alt="mountain-image">
+  </div>
+  <div class="middle-container">
+  <div class="profile">
+    <img src="../HTML-PersonalSite/angela.png" alt="angela profile picture">
+    <h2>Hello.</h2>
+    <p class="intro">Iam an iOS and Web Developer.I'm the founder and CTO of App Brewery.I ❤️ coffee and brew my own beers.</p>
+  </div>
+  <hr>
+  <div class="skills">
+    <h2>My Skills.</h2>
+    <div class="skill-row">
+      <img class="code-img" src="../CSS-MySite/images/skills.gif" alt="skills_image">
+      <h3>Design & Development</h3>
+      <p class="code-skill-description">I started learning code when I was 12 years old because I wanted to make my own video games.Over time,I have gained
+      a wealth of experience desinging and developing mobile and web applications.</p>
+    </div>
+    <div class="skill-row">
+      <img class="chilli-img" src="../CSS-MySite/images/chilli.png" alt="">
+      <h3>Hot Wings Challenge</h3>
+      <p class="chilli-skill-description"> But my best skill is in eating hot wings.I am the undisputed queen of hot wing challenges.Ghost Peppers and Carolina
+      Reapers are my favorite snacks.</p>
+    </div>
+  </div>
+  <hr>
+  <div class="contact-me">
+    <h2>Get In Touch</h2>
+    <h3>If you like hot wings as much I do.</h3>
+    <p class="contact-message">Love hot wings as much I do?Let's talk about how awesome they are!We can code while we eat hot wings!</p>
+    <a class="btn" href="mailto:name@email.com">CONTACT ME</a>
+  </div>
+</div>
+
+
+<div class="bottom-container">
+  <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+  <a class="footer-link" href="https://twitter.com/">Twitter</a>
+  <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
+  <p class="copyright">© 2018 Angela Yu @ The App Brewery.</p>
+</div>
+
+
+
+</body>
+
+</html>
